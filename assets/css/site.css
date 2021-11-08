@@ -35,7 +35,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--bg-color-custom);    
-    
+    color: var(--navbar-color);
 }
 
 #main-content {
