@@ -42,3 +42,11 @@ body {
     background-color: var(--main-content-bg-color);
 }
 
+#about-main-img {    
+    background: url('../images/header-img.jpeg');
+    height:400px; 
+    width:auto;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
