@@ -38,6 +38,10 @@ body {
     color: var(--navbar-color);
 }
 
+#page-footer .nav-link{
+    color: var(--navbar-color);
+}
+
 #main-content {
     background-color: var(--main-content-bg-color);
 }
@@ -49,7 +53,7 @@ body {
 
 #about-art-img {
     height: 400px;
-    background: url("https://images.unsplash.com/photo-1630090896228-88e5ea707294?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+    background: url("../images/meet-team-img.jpeg");
     background-position: center;
     background-repeat: no-repeat;   
     background-size: cover;
