@@ -13,13 +13,13 @@
     <nav class="navbar py-4 shadow-sm sticky-top" id="navbar-custom">
         <div class="container-fluid d-flex justify-content-between w-100">
             <div class="row d-flex justify-content-between">
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <a class="navbar-brand w-50" id="navbar-logo" href="index.html">Create Mor</a>
                     <a class="btn btn-outline dropdown-toggle navbar-btn-cust w-50" >
                         Catalog
                     </a>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <form class="container-fluid d-flex">
                         <input class="form-control w-75 rounded-pill" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success w-25 rounded-pill" type="submit">Search</button>                       
@@ -38,28 +38,35 @@
         </div>
       </nav>
      
-      <main class="container-fluid min-vh-100" id="main-content">      
-        <div class="" id="about-main-img">          
+      <main class="container-fluid m-0 p-0" id="main-content">      
+        <div class="row w-100 m-0 p-0">         
+           <div class="col">
+               <div style="height: 400px; overflow: hidden;">
+                    <img class="img-fluid" src="assets/images/header-img.jpeg">
+               </div>              
+           </div>
         </div>
-        <div class="container text-center w-50">
+       <div class="container text-center w-50">
             <h1 class="display-4">Create Mor</h1>
             <hr>
             <h2>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non doloremque dolorem tempora sit odio explicabo, aliquid praesentium id, quaerat in tempore? Ad mollitia soluta a repellendus, porro quis voluptate."</h2>
         </div>
-        <article class="d-flex justify-content-center w-75 mx-auto">
-            <p class="d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis nostrum aperiam consequuntur. Accusamus eaque dolorem sed, saepe ullam ad explicabo est enim delectus omnis, deserunt quis corrupti pariatur modi!</p>
-            <p class="d-inline-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae unde debitis quidem magni asperiores quia harum consectetur sint praesentium. Exercitationem pariatur quo cumque porro nulla assumenda voluptatem earum reprehenderit dolores.</p>
+       <article class="container">
+           <div class="row">
+            <p class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis nostrum aperiam consequuntur. Accusamus eaque dolorem sed, saepe ullam ad explicabo est enim delectus omnis, deserunt quis corrupti pariatur modi!</p>
+            <p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae unde debitis quidem magni asperiores quia harum consectetur sint praesentium. Exercitationem pariatur quo cumque porro nulla assumenda voluptatem earum reprehenderit dolores.</p>
+           </div>
         </article>
-        <figure class="w-75 mx-auto">
-            <img class="img-fluid" src="http://placekitten.com/g/200/100" alt="about-article-img">
-        </figure>        
+        <figure class="w-75 mx-auto" style="height: 400px; overflow: hidden;">
+            <img class="img-fluid" src="http://placekitten.com/g/400/100" alt="about-article-img">
+        </figure>      
       </main>         
     <footer class="footer p-2 container-fluid" id="page-footer">
         <div class="row d-flex justify-content-between">
             <ul class="col-2 d-flex">
                 <li class="nav-item d-inline-block">Sitemap</li>            
             </ul>
-            <ul class="col-2 d-flex">            
+            <ul class="col-2 d-flex text-end">            
                 <li class="nav-item d-inline-block">About Us</li>
                 <li class="nav-item d-inline-block">Content</li>
             </ul>

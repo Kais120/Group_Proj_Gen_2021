@@ -41,7 +41,7 @@ body {
 #main-content {
     background-color: var(--main-content-bg-color);
 }
-
+/*
 #about-main-img {    
     background: url('../images/header-img.jpeg');
     height:400px; 
@@ -49,4 +49,4 @@ body {
     background-repeat: no-repeat; 
     background-size: cover;
 }
-
+*/
