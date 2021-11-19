@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1920"
-   height="1080"
-   viewBox="0 0 1920 1080"
+   width="234.02295"
+   height="61.027645"
+   viewBox="0 0 234.02295 61.027645"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="drawing.svg"
+   sodipodi:docname="version4.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,47 +23,69 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="10.651852"
-     inkscape:cx="1087.4166"
-     inkscape:cy="428.65786"
+     inkscape:zoom="2.6629629"
+     inkscape:cx="162.60084"
+     inkscape:cy="55.764952"
      inkscape:window-width="1920"
      inkscape:window-height="1186"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer2" />
   <defs
      id="defs2" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-1045.8876,-394.1522)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(-1045.8876,-394.1522)">
     <rect
-       style="fill:#fff180;fill-opacity:1;stroke:#000000;stroke-width:0.933445;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4429"
-       width="232.05568"
-       height="79.329094"
-       x="1053.4537"
-       y="372.3707" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#000000;fill-opacity:1;stroke:none"
-       x="1068.726"
-       y="425.44925"
-       id="text1089"><tspan
-         sodipodi:role="line"
-         id="tspan1087"
-         x="1068.726"
-         y="425.44925"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Algerian;-inkscape-font-specification:Algerian"
-   id="tspan7346">Creat</tspan>MOR</tspan></text>
-    <rect
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.39252;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect12822"
-       width="232.05571"
-       height="5.3238239"
-       x="1053.4537"
-       y="446.37598" />
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.01329"
+       id="rect6189"
+       width="233.00966"
+       height="60.014355"
+       x="1046.3943"
+       y="394.65884" />
+    <g
+       id="g6388"
+       transform="translate(-7.0570068,2.9709473)">
+      <g
+         id="g6373">
+        <rect
+           style="fill:#fff180;fill-opacity:1;stroke:#000000;stroke-width:0.799641;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4429"
+           width="231.19312"
+           height="58.433689"
+           x="1053.3868"
+           y="393.33301" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#000000;fill-opacity:1;stroke:none"
+           x="1062.726"
+           y="433.44925"
+           id="text1089"><tspan
+             sodipodi:role="line"
+             id="tspan1087"
+             x="1062.726"
+             y="433.44925"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Algerian;-inkscape-font-specification:Algerian"
+               id="tspan7346">Creat</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Harrington;-inkscape-font-specification:'Harrington Bold'"
+               id="tspan782">MOR</tspan></tspan></text>
+      </g>
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.391344;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect12822"
+         width="230.61667"
+         height="5.3249998"
+         x="1053.4531"
+         y="446.3754" />
+    </g>
   </g>
 </svg>

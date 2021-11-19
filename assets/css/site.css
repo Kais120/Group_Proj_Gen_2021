@@ -27,8 +27,9 @@ body {
     color: var(--navbar-color);
 }
 
-#navbar-logo {
-    color: darkred;
+#navbar-logo img{
+    height: 40px;
+    width: auto;
 }
 
 #page-footer {  
