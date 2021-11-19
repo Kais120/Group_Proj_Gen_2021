@@ -10,27 +10,29 @@
     <link href="assets/css/site.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar py-4 shadow-sm fixed-top" id="navbar-custom">
+    <nav class="navbar py-4 shadow-sm sticky-top" id="navbar-custom">
         <div class="container-fluid d-flex justify-content-between w-100">
             <div class="row d-flex justify-content-between">
                 <div class="col-md-3">
-                    <a class="navbar-brand w-50" id="navbar-logo" href="index.html">Create Mor</a>
+                    <a class="navbar-brand w-25" id="navbar-logo" href="index.html">
+                        <img src="assets/images/main-logo.svg" class="img-fluid" alt="logo">
+                    </a>
                     <a class="btn btn-outline dropdown-toggle navbar-btn-cust w-50" >
                         Catalog
                     </a>
                 </div>
                 <div class="col-md-6">
                     <form class="container-fluid d-flex">
-                        <input class="form-control w-75 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control w-75 h-50 rounded-pill" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success w-25 rounded-pill" type="submit">Search</button>                       
                     </form>
                 </div>
                
-                <div class="col-md-2 d-flex justify-content-end">
-                    <a class="btn btn-outline navbar-btn-cust" href="#" role="button">
+                <div class="navbar-nav col-2 d-flex flex-row justify-content-end">                   
+                    <a class="nav-link navbar-btn-cust  text-end" href="#" role="button">
                         Shopping Cart
-                    </a>
-                    <a class="btn btn-outline navbar-btn-cust" href="#" role="button">
+                    </a>                
+                    <a class="nav-link navbar-btn-cust  text-end" href="#" role="button">
                         Log In
                     </a>
                 </div>
@@ -69,17 +71,30 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ea ratione magnam accusamus consectetur quam cupiditate, dolores labore ullam autem enim laudantium doloremque atque, laboriosam, excepturi numquam beatae perspiciatis fuga?
             </p>          
       </main>         
-    <footer class="footer p-2 container-fluid" id="page-footer">
+      <footer class="footer p-2 container-fluid" id="page-footer">
         <div class="row d-flex justify-content-between">
             <ul class="col-2 d-flex">
-                <li class="nav-item d-inline-block">Sitemap</li>            
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="#">
+                       Sitemap
+                    </a>
+                </li>            
             </ul>
-            <ul class="col-2 d-flex">            
-                <li class="nav-item d-inline-block">About Us</li>
-                <li class="nav-item d-inline-block">Content</li>
+            <ul class="col-2 d-flex text-end">            
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="about.html">
+                        About Us
+                    </a>
+                </li>
+                <li class="nav-item d-inline-block">
+                    <a class="nav-link" href="#">
+                        Contact
+                    </a>
+                </li>
             </ul>
         </div>       
       </footer>
+   
    
 
     

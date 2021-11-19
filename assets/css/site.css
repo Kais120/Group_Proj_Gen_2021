@@ -27,8 +27,9 @@ body {
     color: var(--navbar-color);
 }
 
-#navbar-logo {
-    color: darkred;
+#navbar-logo img{
+    height: 40px;
+    width: auto;
 }
 
 #page-footer {  
@@ -38,7 +39,32 @@ body {
     color: var(--navbar-color);
 }
 
+#page-footer .nav-link{
+    color: var(--navbar-color);
+}
+
 #main-content {
     background-color: var(--main-content-bg-color);
 }
 
+#about-header {
+    height: 400px;    
+}
+
+
+#about-art-img {
+    height: 400px;
+    background: url("../images/meet-team-img.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;   
+    background-size: cover;
+}
+
+#teamProfileSlides{
+    padding: 0;
+}
+
+#teamProfileSlides .carousel-caption, #teamProfileSlides .carousel-indicators{
+    width: auto;
+    background-color: darkgrey;    
+}
