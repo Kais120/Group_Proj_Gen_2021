@@ -13,36 +13,35 @@
 </head>
 
 <body>
-    <nav class="navbar py-4 shadow-sm sticky-top" id="navbar-custom">
+    <nav class="navbar py-4 w-100 shadow-sm sticky-top" id="navbar-custom">
         <div class="container-fluid d-flex justify-content-between w-100">
-            <div class="row d-flex justify-content-between">
+            <div class="row w-100 d-flex justify-content-between">
                 <div class="col-md-3">
                     <a class="navbar-brand w-25" id="navbar-logo" href="index.html">
                         <img src="assets/images/main-logo.svg" class="img-fluid" alt="logo">
                     </a>
-                    <a class="btn btn-outline dropdown-toggle navbar-btn-cust w-50">
+                    <a class="btn btn-outline dropdown-toggle navbar-btn-cust w-50" >
                         Catalog
                     </a>
                 </div>
                 <div class="col-md-6">
                     <form class="container-fluid d-flex">
-                        <input class="form-control w-75 h-50 rounded-pill" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success w-25 rounded-pill" type="submit">Search</button>
+                        <input class="form-control w-75 h-50 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success w-25 rounded-pill" type="submit">Search</button>                       
                     </form>
                 </div>
-
-                <div class="navbar-nav col-2 d-flex flex-row justify-content-end">
-                    <a class="nav-link navbar-btn-cust  text-end" href="#" role="button">
-                        Shopping Cart
-                    </a>
-                    <a class="nav-link navbar-btn-cust  text-end" href="#" role="button">
-                        Log In
+               
+                <div class="navbar-nav col-2 d-flex flex-row justify-content-end">                   
+                    <a class="nav-link navbar-btn-cust text-end me-5" href="#" role="button">
+                      <i class="bi bi-cart"></i>
+                    </a>                
+                    <a class="nav-link navbar-btn-cust text-end" href="#" role="button">
+                      <i class="bi bi-person-fill"></i>Log In
                     </a>
                 </div>
-            </div>
+            </div>         
         </div>
-    </nav>
+      </nav>
     <main class="container-fluid pt-4 min-vh-100" id="main-content">
 
         <!-- YOUR CONTENT GOES HERE!-->
@@ -164,16 +163,16 @@
         </section>
 
     </main>
-    <footer class="footer p-2 container-fluid" id="page-footer">
-        <div class="row d-flex justify-content-between">
+    <footer class="footer p-2 w-100 container-fluid" id="page-footer">
+        <div class="row w-100 d-flex justify-content-between">
             <ul class="col-2 d-flex">
                 <li class="nav-item d-inline-block">
                     <a class="nav-link" href="#">
-                        Sitemap
+                       Sitemap
                     </a>
-                </li>
+                </li>            
             </ul>
-            <ul class="col-2 d-flex text-end">
+            <ul class="col-2 d-flex justify-content-end">            
                 <li class="nav-item d-inline-block">
                     <a class="nav-link" href="about.html">
                         About Us
@@ -185,8 +184,9 @@
                     </a>
                 </li>
             </ul>
-        </div>
-    </footer>
+        </div>       
+      </footer>
+   
 
 
 
