@@ -51,12 +51,16 @@
                         </div>
                         <div class="mb-3">
                             <label for="itemDescription" class="form-label">Description</label>
-                            <textarea class="form-control" id="itemDescription" name="itemDescription" aria-describedby="itemName"></textarea>   
+                            <textarea class="form-control" id="itemDescription" name="itemDescription" aria-describedby="itemDescription"></textarea>   
                         </div>
                         <div class="mb-3">
                             <label for="itemImgUrl" class="form-label">Image URL</label>
-                            <input class="form-control" id="itemImgUrl" name="itemImgUrl" aria-describedby="itemName">      
-                        </div>                  
+                            <input class="form-control" id="itemImgUrl" name="itemImgUrl" aria-describedby="itemImgUrl">      
+                        </div>  
+                        <div class="mb-3">
+                            <label for="itemPrice" class="form-label">Price</label>
+                            <input type="number" class="form-control" id="itemPrice" name="itemPrice" aria-describedby="itemPrice">      
+                        </div>                 
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
@@ -68,6 +72,7 @@
                                     <th>Image</th>
                                     <th>Name</th>
                                     <th>Description</th>
+                                    <th>Price</th>
                                 </tr>
                             </thead>
                             <tbody id="itemsTableBody">
@@ -80,6 +85,9 @@
                                     </td>
                                     <td>
                                         itemDescription
+                                    </td>
+                                    <td>
+                                        10.00
                                     </td>
                                 </tr>
                                 

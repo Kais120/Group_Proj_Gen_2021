@@ -14,6 +14,7 @@ newItemForm.addEventListener('submit', (event) => {
     const newItemNameInput = document.querySelector('#itemName');
     const newItemDescription = document.querySelector('#itemDescription');
     const newItemImgUrl = document.querySelector('#itemImgUrl');
+    const newPrice = document.querySelector('#itemPrice');
 
     /*
         Validation code here
@@ -23,9 +24,10 @@ newItemForm.addEventListener('submit', (event) => {
     const name = newItemNameInput.value;
     const description = newItemDescription.value;
     const imgUrl = newItemImgUrl.value;
+    const price = newPrice.value;
 
     // Add the task to the task manager
-    itemsController.addItem(name, description, imgUrl);
+    itemsController.addItem(name, description, imgUrl, price);
 
     // Clear the form
     newItemNameInput.value = '';
@@ -36,7 +38,8 @@ newItemForm.addEventListener('submit', (event) => {
     const itemObj = {
         name: name,
         description: description,
-        imgUrl: imgUrl
+        imgUrl: imgUrl,
+        price: price,
     };
 
     //call rendering function
@@ -57,6 +60,9 @@ function addItemCard(item){
     const newNameTd = document.createElement("td");
     //new new desctiption td
     const newDescTd = document.createElement("td");
+    //new price td
+    const newPriceTd = document.createElement("td");
+
 
     //setting img props
     newImg.src = item.imgUrl;
@@ -71,10 +77,14 @@ function addItemCard(item){
     //setting name td
     newDescTd.innerHTML = item.description;
 
+      //setting price td
+      newPriceTd.innerHTML = item.price;
+
     //appending tds to the newtr
     newTr.appendChild(newImgTd);
     newTr.appendChild(newNameTd);
     newTr.appendChild(newDescTd);
+    newTr.appendChild(newPriceTd);
 
     //append to the table body
     itemsTblBody.appendChild(newTr);
@@ -82,9 +92,11 @@ function addItemCard(item){
 
 addItemCard({'name':'juice',
     'imgUrl':'https://www.gs1india.org/media/Juice_pack.jpg',
-    'description':'Orange and Apple juice fresh and delicious'});
+    'description':'Orange and Apple juice fresh and delicious',
+    'price': 10.00});
 
 addItemCard({'name':'Tayto',
     'imgUrl':'https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg',
-    'description':'Cheese & Onion Chips'})
+    'description':'Cheese & Onion Chips',
+    'price': 20.00});
 

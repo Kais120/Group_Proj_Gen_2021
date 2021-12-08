@@ -7,13 +7,14 @@ export default class ItemsController {
     }
 
     // Create the addItem method
-    addItem(name, description,imageUrl) {
+    addItem(name, description,imageUrl, price = 0) {
         const item = {
             // Increment the currentId property
             id: this.currentId++,
             name: name,
             description: description,
-            imageUrl: imageUrl
+            imageUrl: imageUrl,
+            price: price
         };
 
         // Push the item to the items property
