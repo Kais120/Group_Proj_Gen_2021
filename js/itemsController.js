@@ -16,17 +16,24 @@ export default class ItemsController {
             imageUrl: imageUrl,
             price: price
         };
-
         // Push the item to the items property
         this._items.push(item);
+        setLocalStorage();
     }
 
-    loadItemsFromLocalStorage() {
-        const storageItems = localStorage.getItem("items");
-        if (storageItems) {
-            const items = JSON.parse(storageItems)
-            this._items = items;       
-        }
+    loadItemsFromLocalStorage() {      
+        let items = localStorage.getItem("items");
+        let currentId = localStorage.getItem("currentId");
+        
+        this._items = items ? JSON.parse(items) : this._items;
+        this._currentId = currentId ? currentId : this._currentId;        
+    }
+
+    setLocalStorage() {
+        let currentId = this._currentId;
+        let items = JSON.stringify(this._currentId);
+        localStorage.setItem("currentId", currentId);
+        localStorage.setItem("items", items);        
     }
 
     get items(){

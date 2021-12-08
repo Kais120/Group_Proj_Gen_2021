@@ -5,19 +5,6 @@ const itemsController = new ItemsController(0);
 // Select the New Task Form
 const newItemForm = document.querySelector('#newItemForm');
 
-const sampleItems = [
-    {'name':'juice',
-    'imgUrl':'https://www.gs1india.org/media/Juice_pack.jpg',
-    'description':'Orange and Apple juice fresh and delicious',
-    'price': 10.00},
-    {'name':'Tayto',
-    'imgUrl':'https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg',
-    'description':'Cheese & Onion Chips',
-    'price': 20.00}
-];
-//saving samples to local storage
-localStorage.setItem("items", JSON.stringify(sampleItems));
-
 //loading samples to controller items
 itemsController.loadItemsFromLocalStorage();
 
