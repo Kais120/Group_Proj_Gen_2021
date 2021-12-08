@@ -18,7 +18,7 @@ export default class ItemsController {
         };
         // Push the item to the items property
         this._items.push(item);
-        setLocalStorage();
+        this.setLocalStorage();
     }
 
     loadItemsFromLocalStorage() {      
@@ -26,12 +26,12 @@ export default class ItemsController {
         let currentId = localStorage.getItem("currentId");
         
         this._items = items ? JSON.parse(items) : this._items;
-        this._currentId = currentId ? currentId : this._currentId;        
+        this._currentId = currentId ? JSON.parse(currentId) : this._currentId;        
     }
 
     setLocalStorage() {
-        let currentId = this._currentId;
-        let items = JSON.stringify(this._currentId);
+        let currentId = JSON.stringify(this._currentId);
+        let items = JSON.stringify(this._items);
         localStorage.setItem("currentId", currentId);
         localStorage.setItem("items", items);        
     }

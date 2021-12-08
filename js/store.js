@@ -40,6 +40,7 @@ newItemForm.addEventListener('submit', (event) => {
     newItemNameInput.value = '';
     newItemDescription.value = '';
     newItemImgUrl.value = '';
+    newPrice.value = '';
 
     //new object for rednering
     const itemObj = {
@@ -72,7 +73,7 @@ function addItemCard(item){
 
 
     //setting img props
-    newImg.src = item.imgUrl;
+    newImg.src = item.imageUrl;
     newImg.alt = item.name;
     newImg.className = "item-img";
     //appending img to imgTd
@@ -84,8 +85,8 @@ function addItemCard(item){
     //setting name td
     newDescTd.innerHTML = item.description;
 
-      //setting price td
-      newPriceTd.innerHTML = item.price;
+    //setting price td
+    newPriceTd.innerHTML = item.price;
 
     //appending tds to the newtr
     newTr.appendChild(newImgTd);
