@@ -26,7 +26,7 @@ newItemForm.addEventListener('submit', (event) => {
      // Get the values of the inputs
      const name = encodeURIComponent(newItemNameInput.value);
      const description = encodeURIComponent(newItemDescription.value);
-     const imageUrl = encodeURIComponent(newItemImgUrl.value);
+     const imageUrl = newItemImgUrl.value;
      const price = encodeURIComponent(newPrice.value);
  
 
