@@ -23,18 +23,29 @@ newItemForm.addEventListener('submit', (event) => {
     const newItemImgUrl = document.querySelector('#itemImgUrl');
     const newPrice = document.querySelector('#itemPrice');
 
+     // Get the values of the inputs
+     const name = newItemNameInput.value;
+     const description = newItemDescription.value;
+     const imageUrl = newItemImgUrl.value;
+     const price = newPrice.value;
+ 
+
     /*
         Validation code here
     */
 
-    // Get the values of the inputs
-    const name = newItemNameInput.value;
-    const description = newItemDescription.value;
-    const imgUrl = newItemImgUrl.value;
-    const price = newPrice.value;
+    var expression = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+  
+    
+    if (!imageUrl.match(expression)) {
+        alert("Please enter a valid URL");        
+        return;
+    }
 
+
+   
     // Add the task to the task manager
-    itemsController.addItem(name, description, imgUrl, price);
+    itemsController.addItem(name, description, imageUrl, price);
 
     // Clear the form
     newItemNameInput.value = '';
@@ -46,7 +57,7 @@ newItemForm.addEventListener('submit', (event) => {
     const itemObj = {
         name: name,
         description: description,
-        imgUrl: imgUrl,
+        imageUrl: imageUrl,
         price: price,
     };
 
