@@ -24,10 +24,10 @@ newItemForm.addEventListener('submit', (event) => {
     const newPrice = document.querySelector('#itemPrice');
 
      // Get the values of the inputs
-     const name = newItemNameInput.value;
-     const description = newItemDescription.value;
-     const imageUrl = newItemImgUrl.value;
-     const price = newPrice.value;
+     const name = encodeURIComponent(newItemNameInput.value);
+     const description = encodeURIComponent(newItemDescription.value);
+     const imageUrl = encodeURIComponent(newItemImgUrl.value);
+     const price = encodeURIComponent(newPrice.value);
  
 
     /*
