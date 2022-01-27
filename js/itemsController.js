@@ -19,6 +19,7 @@ export default class ItemsController {
         // Push the item to the items property
         this._items.push(item);
         this.setLocalStorage();
+        this.save(item.name,item.description,item.imageUrl,item.price);
     }
 
     loadItemsFromLocalStorage() {      
@@ -42,6 +43,25 @@ export default class ItemsController {
 
     set items(items){
         this._items = items;
+    }
+    //Save products
+    save({name, description, imageUrl, Price}){
+        const data = { name,  description, imageUrl,Price };
+
+        fetch('https://pure-harbor-89998.herokuapp.com/Product', {
+        method: 'POST', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+        console.log('Success:', data);
+        })
+        .catch((error) => {
+        console.error('Error:', error);
+        });
     }
 }
 
